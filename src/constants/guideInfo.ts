@@ -9,6 +9,6 @@ export const guideInfo: GuideType[] = [
   {
     value: 'parking',
     label: '주차안내',
-    content: '차량 등록 시 무료 주차 시간은 1시간 30분입니다.\n* 2층 주차등록데스크에 개별등록 필요',
+    content: '차량 등록 시 무료 주차 시간은\n1시간 30분입니다.\n* 2층 주차등록데스크에 개별등록 필요',
   },
 ];

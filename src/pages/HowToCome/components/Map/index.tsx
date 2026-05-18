@@ -6,11 +6,11 @@ import naverMapImage from '@/assets/images/naver_map.webp';
 import kakaoMapImage from '@/assets/images/kakaomap_basic.png';
 import tMapImage from '@/assets/images/t_map.svg';
 
-const WEDDING_HALL_NAME = '아펠가모 선릉';
-const WEDDING_HALL_ADDRESS = '서울 강남구 테헤란로 322 한신인터밸리24 4층';
+const WEDDING_HALL_NAME = '건설회관';
+const WEDDING_HALL_ADDRESS = '서울 강남구 언주로 711 건설회관';
 
-const LATITUDE = 37.5029773;
-const LONGITUDE = 127.046553;
+const LATITUDE = 37.5163003;
+const LONGITUDE = 127.0299123;
 
 const Map = () => {
   useEffect(() => {
@@ -49,7 +49,7 @@ const Map = () => {
   };
 
   const openWithNaverMap = () => {
-    window.location.href = `https://map.naver.com/p/search/${encodeURIComponent(WEDDING_HALL_NAME)}`;
+    window.location.href = `https://map.naver.com/p/search/${encodeURIComponent(WEDDING_HALL_ADDRESS)}`;
   };
 
   const openWithKakaoMap = () => {
