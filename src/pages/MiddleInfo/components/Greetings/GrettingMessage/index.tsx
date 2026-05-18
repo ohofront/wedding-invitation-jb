@@ -6,19 +6,21 @@ const GreetingMessage = () => {
       <div className='text-xl font-medium'>소중한 분들을 초대합니다</div>
 
       <div className='m-10 leading-8'>
-        매일의 작은 소란을 유쾌히
+        눈부신 초록빛이 가득한 8월 어느 날,
         <br />
-        함께할 수 있는 평생의 짝꿍을 만났습니다.
+        저희 두 사람 여름날의 뜨거운 햇살 아래
         <br />
-        저희 두 사람이 하나 되는 날,
+        서로의 시원한 그늘이 되어주겠다는 약속을 하려 합니다.
         <br />
-        곁에서 지켜봐 주신 소중한 분들을 초대합니다.
         <br />
+        저희의 약속이 깊이 뿌리 내릴 수 있도록
+        <br />
+        함께 축하해 주시면 감사하겠습니다.
       </div>
 
       {/* Content 이미지 */}
       <div className='pt-4'>
-        <img src={middleInfoImage} className='w-full'></img>
+        <img src={middleInfoImage} className='w-full' alt='wedding information' />
       </div>
     </>
   );

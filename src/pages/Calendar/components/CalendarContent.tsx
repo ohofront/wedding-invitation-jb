@@ -3,8 +3,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 const days = ['일', '월', '화', '수', '목', '금', '토'];
 
 const CalendarContent = () => {
-  const firstDay = new Date(2026, 6, 1).getDay(); // 2026년 7월 1일
-  const lastDate = new Date(2026, 7, 0).getDate(); // 2026년 7월 마지막 날짜
+  const firstDay = new Date(2026, 7, 1).getDay(); // 2026년 8월 1일
+  const lastDate = new Date(2026, 8, 0).getDate(); // 2026년 8월 마지막 날짜
 
   const dates = Array(firstDay)
     .fill(null)
@@ -12,8 +12,8 @@ const CalendarContent = () => {
 
   return (
     <div className='w-full h-full leading-9'>
-      <div className='text-2xl font-medium tracking-wide'>2026.07.25</div>
-      <div className='mb-5 tracking-wider'>토요일 오후 5시</div>
+      <div className='text-2xl font-medium tracking-wide'>2026.08.08</div>
+      <div className='mb-5 tracking-wider'>토요일 오후 2시</div>
 
       <div className='w-full px-4 pb-10 text-center'>
         <Table>
@@ -42,7 +42,7 @@ const CalendarContent = () => {
                 {dates.slice(week * 7, (week + 1) * 7).map((date, i) => {
                   const isSunday = i === 0;
                   const isSaturday = i === 6;
-                  const isWeddingDay = date === 25;
+                  const isWeddingDay = date === 8;
 
                   return (
                     <TableCell

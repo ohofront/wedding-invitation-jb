@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const CountDown = () => {
-  const targetDate = new Date('2026-07-25T17:00:00').getTime();
+  const targetDate = new Date('2026-08-08T14:00:00').getTime();
   const [timer, setTimer] = useState(targetDate - Date.now());
 
   useEffect(() => {
@@ -63,7 +63,7 @@ const CountDown = () => {
       </div>
 
       <div>
-        <span>성현🩷소민 의 결혼식이&nbsp;</span>
+        <span>정범🩷지연 의 결혼식이&nbsp;</span>
         <span>
           <span className='text-[#ea7664]'>{days + 1}일</span>
           <span>&nbsp;남았습니다.</span>

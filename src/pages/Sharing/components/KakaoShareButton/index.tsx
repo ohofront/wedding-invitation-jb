@@ -27,7 +27,7 @@ const KakaoShareButton = () => {
     window.Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
-        title: '박성현 ♥ 조소민 결혼합니다',
+        title: '고정범 ♥ 김지연 결혼합니다',
         description: '저희의 결혼식에 초대합니다.',
         imageUrl: THUMBNAIL_URL,
         link: {

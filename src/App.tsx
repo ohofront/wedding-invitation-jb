@@ -8,9 +8,10 @@ import BlessingMoney from '@/pages/BlessingMoney';
 import Sharing from '@/pages/Sharing/index';
 import { Toaster } from '@/components/ui/toaster';
 import AnimatedComponent from '@/AnimatedComponent';
+import GuideInfo from './pages/GuideInfo';
 
 export default function App() {
-  const components = [TopInfo, MiddleInfo, Calendar, Gallery, HowToCome, BlessingMoney, Sharing];
+  const components = [TopInfo, MiddleInfo, Calendar, Gallery, HowToCome, GuideInfo, BlessingMoney, Sharing];
 
   return (
     <div className='flex items-center justify-center h-full bg-margin-bg'>
