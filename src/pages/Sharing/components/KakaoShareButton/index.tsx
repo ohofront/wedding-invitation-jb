@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import KakaoIcon from '@/assets/icons/kakao.svg';
 import useKakaoSDK from '@/hooks/useKakaoSDK';
 
-const INVITATION_URL = 'https://wedding-invitation-sh.vercel.app';
+const INVITATION_URL = 'https://wedding-invitation-jb-omega.vercel.app';
 const THUMBNAIL_URL = `${INVITATION_URL}/images/wedding-share.png`;
 
 const KakaoShareButton = () => {
