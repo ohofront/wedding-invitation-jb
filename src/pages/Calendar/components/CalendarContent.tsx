@@ -15,19 +15,19 @@ const CalendarContent = () => {
       <div className='text-2xl font-medium tracking-wide'>2026.08.08</div>
       <div className='mb-5 tracking-wider'>토요일 오후 2시</div>
 
-      <div className='w-full px-4 pb-10 text-center'>
-        <Table>
+      <div className='w-full px-4 pb-10 overflow-hidden text-center'>
+        <Table className='w-full border-0 table-fixed'>
           <TableHeader>
-            <TableRow>
+            <TableRow className='border-0 hover:bg-transparent'>
               {days.map((day, index) => (
                 <TableHead
                   key={index}
                   className={
                     day === '일'
-                      ? 'text-[#c6472b] text-center'
+                      ? 'h-12 text-center text-[#c6472b]'
                       : day === '토'
-                        ? 'text-blue-500 text-center'
-                        : 'text-center'
+                        ? 'h-12 text-center text-blue-500'
+                        : 'h-12 text-center'
                   }
                 >
                   {day}
@@ -38,7 +38,7 @@ const CalendarContent = () => {
 
           <TableBody>
             {Array.from({ length: Math.ceil(dates.length / 7) }, (_, week) => (
-              <TableRow key={week}>
+              <TableRow key={week} className='border-0 hover:bg-transparent'>
                 {dates.slice(week * 7, (week + 1) * 7).map((date, i) => {
                   const isSunday = i === 0;
                   const isSaturday = i === 6;
@@ -48,16 +48,28 @@ const CalendarContent = () => {
                     <TableCell
                       key={i}
                       className={
-                        isWeddingDay
-                          ? 'bg-[#858585] text-white rounded-full'
-                          : isSunday
-                            ? 'text-[#c6472b]'
-                            : isSaturday
-                              ? 'text-blue-500'
-                              : ''
+                        isSunday
+                          ? 'h-16 text-center text-[#c6472b]'
+                          : isSaturday
+                            ? 'h-16 text-center text-blue-500'
+                            : 'h-16 text-center'
                       }
                     >
-                      {date || ''}
+                      {date ? (
+                        <span className='relative inline-flex items-center justify-center w-10 h-10'>
+                          {isWeddingDay && (
+                            <span className='absolute inset-0 flex items-center justify-center text-5xl leading-none text-[#858585]'>
+                              ♥
+                            </span>
+                          )}
+
+                          <span className={isWeddingDay ? 'relative z-10 text-sm text-white' : 'relative z-10'}>
+                            {date}
+                          </span>
+                        </span>
+                      ) : (
+                        ''
+                      )}
                     </TableCell>
                   );
                 })}
