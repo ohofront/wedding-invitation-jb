@@ -1,4 +1,4 @@
-import maintopImage from '@/assets/images/maintopImage.png';
+import maintopImage from '@/assets/images/maintopImage.jpg';
 const MainImage = () => {
   return (
     <div className='relative mt-6 mx-auto w-[82%] min-h-[80px] leading-none z-0 overflow-hidden'>

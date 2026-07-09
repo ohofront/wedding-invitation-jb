@@ -1,4 +1,4 @@
-import middleInfoImage from '@/assets/images/middleInfoImage.png';
+import middleInfoImage from '@/assets/images/middleInfoImage.jpg';
 
 const GreetingMessage = () => {
   return (
