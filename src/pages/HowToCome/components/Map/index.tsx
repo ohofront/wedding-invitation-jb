@@ -10,8 +10,8 @@ const WEDDING_HALL_NAME = '건설회관';
 const WEDDING_HALL_ADDRESS = '서울 강남구 언주로 711 건설회관';
 
 // Fallback coordinates (won't be used if geocoding succeeds)
-const LATITUDE = 37.5163003;
-const LONGITUDE = 127.0299123;
+const LATITUDE = 37.5173566;
+const LONGITUDE = 127.0341427;
 
 const Map = () => {
   useEffect(() => {
